@@ -1,8 +1,5 @@
 def solution(num_list, n):
-    answer = []
-    for i in range(len(num_list)//n):
-        l = []
-        for j in range(i*n, (i+1)*n):
-            l.append(num_list[j])
-        answer.append(l)
-    return answer
+    ans = []
+    for i in range(0, len(num_list), n):
+        ans.append(num_list[i:i+n])
+    return ans
