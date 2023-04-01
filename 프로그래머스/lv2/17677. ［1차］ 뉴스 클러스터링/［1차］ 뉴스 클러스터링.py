@@ -13,8 +13,7 @@ def solution(str1, str2):
     if s1 == [] and s2 == []:
         return 65536
     
-    N1, N2 = len(s1), len(s2)
-    for one in range(N1):
+    for one in range(len(s1)):
         for two in range(len(s2)):
             if s1[one] == s2[two]:
                 inter += 1
@@ -22,7 +21,7 @@ def solution(str1, str2):
                 break
             
     #자카드 유사도
-    uni = N1 + N2 - inter
+    uni = len(s1)+len(s2)
     if inter == uni:
         return 65536
     
