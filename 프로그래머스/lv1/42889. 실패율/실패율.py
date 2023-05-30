@@ -13,7 +13,7 @@ def solution(N, stages):
             total -= fail
         else:
             result[i] = 0
-
+    return sorted(result, key=lambda x : result[x], reverse=True)
     result = sorted(result.items(), key=lambda x:(-x[1], x[0]))
     ans = []
     for a in range(N):
