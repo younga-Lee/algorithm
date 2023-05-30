@@ -11,8 +11,7 @@ def solution(priorities, location):
         if top == mx: #최대
             cnt += 1
             if toq == location:
-                break
+                return cnt
         else:
             q.append(toq)
             p.append(top)
-    return cnt
