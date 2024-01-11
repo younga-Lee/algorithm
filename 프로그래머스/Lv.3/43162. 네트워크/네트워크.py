@@ -1,6 +1,6 @@
 def solution(n, computers):
     ans = 0
-    stk = [0]
+    stk = []
     while computers != [[0]*n]*n:
         #시작하는 위치
         for i in range(n):
