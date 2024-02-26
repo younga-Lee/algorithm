@@ -22,6 +22,8 @@ def solution(files):
         tail = file[i:]
         answer.append((header, num, tail))
 
-        answer = sorted(answer, key=lambda x:[x[0].lower() ,int(x[1])])
+        answer = sorted(answer, key=lambda x:[str.lower, int(x[1])])
     ans = []
-    return [''.join(item) for item in answer]
+    for a, b, c in answer:
+        ans.append(a+b+c)
+    return ans
